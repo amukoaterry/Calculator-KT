@@ -12,11 +12,12 @@
         android:layout_width="0dp"
         android:layout_height="93dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="24dp"
-        android:inputType="number"
-        android:text="Enter number1"
+        android:hint="Enter Number1"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,8 +29,8 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:ems="10"
-        android:inputType="number"
-        android:text="Enter number2"
+        android:hint="@string/enter_number_2"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +43,7 @@
         android:layout_marginTop="100dp"
 
 
-        android:text="+"
+        android:text="@string/addition"
         app:layout_constraintEnd_toStartOf="@+id/btnsubtract"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +53,7 @@
         android:id="@+id/btnsubtract"
         android:layout_width="56dp"
         android:layout_height="wrap_content"
-        android:text="-"
+        android:text="@string/subtraction"
         app:layout_constraintEnd_toStartOf="@+id/btnmultiply"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnadd"
@@ -62,7 +63,7 @@
         android:id="@+id/btnmultiply"
         android:layout_width="56dp"
         android:layout_height="wrap_content"
-        android:text="*"
+        android:text="@string/multiply"
         app:layout_constraintEnd_toStartOf="@+id/btndivide"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnsubtract"
@@ -72,7 +73,7 @@
         android:id="@+id/btndivide"
         android:layout_width="56dp"
         android:layout_height="50dp"
-        android:text="÷"
+        android:text="@string/divide"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnmultiply"
@@ -80,11 +81,16 @@
 
     <TextView
         android:id="@+id/tvResult"
-        android:layout_width="64dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Result"
-        app:layout_constraintTop_toBottomOf="@+id/btnsubtract"
-        tools:layout_editor_absoluteX="194dp" />
+        android:layout_width="106dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="-64dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/result"
+        android:textFontWeight="@integer/material_motion_duration_long_1"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnmultiply" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
